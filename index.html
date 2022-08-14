@@ -41,17 +41,17 @@
           </ul>
         </nav>
         <ul class="contacts">
-          <li class="item">
-            <a class="link-mail" href="mailto:info@devstudio.com"
-              ><svg class="mail-icons" width="16" height="12">
+          <li class="contacts__item">
+            <a class="contacts__link--mail" href="mailto:info@devstudio.com"
+              ><svg class="contacts__icon--mail" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a class="link-tel" href="tel:+380961111111">
-              <svg class="tel-icons" width="10" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link--tel" href="tel:+380961111111">
+              <svg class="contacts__icon--tel" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -62,62 +62,63 @@
     </header>
     <main>
       <!-- Hero -->
-      <section class="section-hero">
-        <div class="conteiner conteiner-hero">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open class="hero-btn" type="button">
+      <section class="hero">
+        <div class="hero__conteiner conteiner">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button data-modal-open class="hero__btn" type="button">
             Заказать услугу
           </button>
         </div>
       </section>
+
       <!-- Features -->
       <section class="features">
-        <div class="conteiner">
-          <ul class="features-list">
-            <li class="features-item">
-              <div class="conteiner-icons">
-                <svg class="features-icons" width="70" height="70">
+        <div class="features__conteiner conteiner">
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__icons">
+                <svg class="features__icons--antenna" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="features-titie">Внимание к деталям</h3>
-              <p class="features-txt">
+              <h3 class="features__titie">Внимание к деталям</h3>
+              <p class="features__txt">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="features-item">
-              <div class="conteiner-icons">
-                <svg class="features-icons" width="70" height="70">
+            <li class="features__item">
+              <div class="features__icons">
+                <svg class="features__icons--clock" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="features-titie">Пунктуальность</h3>
-              <p class="features-txt">
+              <h3 class="features__titie">Пунктуальность</h3>
+              <p class="features__txt">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="features-item">
-              <div class="conteiner-icons">
-                <svg class="features-icons" width="70" height="70">
+            <li class="features__item">
+              <div class="features__icons">
+                <svg class="features__icons--diagram" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="features-titie">Планирование</h3>
-              <p class="features-txt">
+              <h3 class="features__titie">Планирование</h3>
+              <p class="features__txt">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="features-item">
-              <div class="conteiner-icons">
-                <svg class="features-icons" width="70" height="70">
+            <li class="features__item">
+              <div class="features__icons">
+                <svg class="features__icons--astronaut" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features-titie">Современные технологии</h3>
-              <p class="features-txt">
+              <h3 class="features__titie">Современные технологии</h3>
+              <p class="features__txt">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -125,41 +126,43 @@
           </ul>
         </div>
       </section>
+
       <!-- Specialization -->
       <section class="specialization">
         <div class="conteiner">
-          <h2 class="specialization-title">Чем мы занимаемся</h2>
-          <ul class="specialization-list">
-            <li class="specialization-item">
+          <h2 class="specialization__title">Чем мы занимаемся</h2>
+          <ul class="specialization__list">
+            <li class="specialization__item">
               <img
                 src="./images/specialization/box-1sq.jpg"
                 alt="работа за компьютером"
                 width="370"
                 height="294"
               />
-              <h3 class="special-name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+              <h3 class="specialization__name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
-            <li class="specialization-item">
+            <li class="specialization__item">
               <img
                 src="./images/specialization/box-2sq.jpg"
                 alt="работа с телефоном"
                 width="370"
                 height="294"
               />
-              <h3 class="special-name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+              <h3 class="specialization__name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
-            <li class="specialization-item">
+            <li class="specialization__item">
               <img
                 src="./images/specialization/box-3sq.jpg"
                 alt="работа с планшетом"
                 width="370"
                 height="294"
               />
-              <h3 class="special-name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+              <h3 class="specialization__name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
             </li>
           </ul>
         </div>
       </section>
+
       <!-- Section team -->
       <section class="team">
         <div class="conteiner">
@@ -435,82 +438,82 @@
       <!-- Section clients -->
       <section class="clients">
         <div class="conteiner">
-          <h2 class="clients-title">Постоянные клиенты</h2>
-          <ul class="clients-list">
-            <li class="clients-item">
+          <h2 class="clients__title">Постоянные клиенты</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YA & CO"
               >
-                <svg class="clients-icons" width="106" height="60">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icons.svg#logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TAGLINE HERE"
               >
-                <svg class="clients-icons" width="106" height="60">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icons.svg#logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="COMPANY"
               >
-                <svg class="clients-icons" width="106" height="60">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icons.svg#logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="FOSTER PETERS"
               >
-                <svg class="clients-icons" width="106" height="60">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icons.svg#logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="BRAND"
               >
-                <svg class="clients-icons" width="106" height="60">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icons.svg#logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link"
+                class="clients__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TAG LINE"
               >
-                <svg class="clients-icons" width="106" height="60">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icons.svg#logo-6"></use>
                 </svg>
               </a>
