@@ -45,10 +45,10 @@
 .team-list,
 .icons-list,
 .clients__list,
-.adds-list,
-.connect-list,
-.filters-list,
-.portfolio-list {
+.adds__list,
+.connect__list,
+.filters,
+.portfolio__list {
   list-style-type: none;
 }
 
@@ -68,10 +68,10 @@ p {
 .specialization__list,
 .team-list,
 .clients__list,
-.adds-list,
-.filters-list,
-.connect-list,
-.portfolio-list,
+.adds__list,
+.filters,
+.connect__list,
+.portfolio__list,
 .icons-list {
   padding: 0;
   margin: 0;
@@ -102,10 +102,7 @@ img {
 
 .header__logo {
   margin-right: 93px;
-}
 
-.header__logo,
-.footer-logo {
   color: var(--logo-header-color);
 
   font-family: "Raleway";
@@ -189,8 +186,7 @@ img {
   gap: 50px;
 }
 
-.contacts__link--mail,
-.contacts__link--tel {
+.contacts__link {
   display: flex;
   align-items: center;
   color: var(--icons-secondary-color);
@@ -215,8 +211,7 @@ img {
   color: var(--akcent-color);
 }
 
-.contacts__icon--mail,
-.contacts__icon--tel {
+.contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -525,28 +520,43 @@ img {
   background-color: var(--bgc-secondary);
 }
 
-.footer-conteiner {
+.footer__conteiner {
   display: flex;
   align-items: baseline;
 
   background-color: var(--bgc-secondary);
 }
-.conteiner-adds {
+.footer__adds {
   margin-right: 70px;
 }
 
-.footer-logo {
+.footer__logo--first-logo {
+  color: var(--akcent-color);
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.footer__logo {
   display: block;
   margin-bottom: 20px;
+
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
   color: var(--logo-footer-color);
 }
 
-.adds-item:not(:last-child) {
+.adds__item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
 }
 
-.adds-link {
+.adds__link {
   color: var(--logo-footer-color);
 
   font-weight: 400;
@@ -559,12 +569,12 @@ img {
   transition: color var(--animation);
 }
 
-.adds-link:hover,
-.adds-link:focus {
+.adds__link:hover,
+.adds__link:focus {
   color: var(--akcent-color);
 }
 
-.adds-contact {
+.adds__contact {
   color: rgba(255, 255, 255, 0.6);
 
   font-weight: 400;
@@ -577,12 +587,12 @@ img {
   transition: color var(--animation);
 }
 
-.adds-contact:hover,
-.adds-contact:focus {
+.adds__contact:hover,
+.adds__contact:focus {
   color: var(--akcent-color);
 }
 
-.footer-title {
+.connect__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -593,14 +603,14 @@ img {
   margin-bottom: 20px;
 }
 
-.connect-list {
+.connect__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-.link-connect {
+.connect__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -614,12 +624,12 @@ img {
   transition: background-color var(--animation);
 }
 
-.link-connect:hover,
-.link-connect:focus {
+.connect__link:hover,
+.connect__link:focus {
   background-color: var(--akcent-color);
 }
 
-.connect-icons {
+.connect__icons {
   fill: currentColor;
 }
 
@@ -627,7 +637,8 @@ img {
   display: block;
   margin-left: 93px;
 }
-.form-txt {
+
+.footer-form__caption {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -639,14 +650,14 @@ img {
   color: var(--logo-footer-color);
 }
 
-.mail-form {
+.footer-form__mail {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
 }
 
-.footer-input {
+.footer-form__input {
   box-sizing: border-box;
   width: 358px;
   height: 50px;
@@ -660,12 +671,12 @@ img {
   outline: transparent;
 }
 
-.footer-input:focus {
+.footer-form__input:focus {
   color: var(--logo-footer-color);
   border: solid var(--akcent-color);
 }
 
-.form-btn {
+.footer-form__btn {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -680,18 +691,18 @@ img {
   background-color: var(--akcent-color);
 }
 
-.txt-btn {
+.footer-form__txt {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
 
-.form-icon {
+.footer-form__icon {
   color: var(--logo-footer-color);
 }
-/* Modal */
 
+/* Modal */
 .backdrop {
   position: fixed;
   top: 0;
@@ -908,14 +919,14 @@ img {
   padding-bottom: 94px;
 }
 
-.filters-list {
+.filters {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
 
-.filters-btn {
+.filters__btn {
   padding: 6px 22px;
   background-color: var(--filter-button);
   color: var(--title-text-color);
@@ -931,29 +942,24 @@ img {
   transition: background-color var(--animation), color var(--animation),
     box-shadow var(--animation);
 }
-.filters-btn:hover,
-.filters-btn:focus {
+.filters__btn:hover,
+.filters__btn:focus {
   background-color: var(--akcent-color);
   color: var(--logo-footer-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio-item {
+.portfolio__item {
   flex-basis: calc((100% - 60px) / 3);
 }
-.work-name {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
-}
 
-.link {
+.portfolio__link {
   display: block;
   text-decoration: none;
   color: var(--text-color);
@@ -961,18 +967,24 @@ img {
   transition: box-shadow var(--animation);
 }
 
-.link:hover,
-.link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.portfolio__link:hover .overlay__txt,
+.portfolio__link:focus .overlay__txt {
+  transform: translateY(0);
+}
+
 .overlay {
   position: relative;
   overflow: hidden;
   top: 0;
   left: 0;
 }
-.overlay-txt {
+.overlay__txt {
   position: absolute;
   top: 0;
   left: 0;
@@ -984,9 +996,11 @@ img {
   transform: translateY(100%);
   transition: transform var(--animation);
 }
-.link:hover .overlay-txt,
-.link:focus .overlay-txt {
-  transform: translateY(0);
+
+.work-name {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .text {
