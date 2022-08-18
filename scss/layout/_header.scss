@@ -12,7 +12,7 @@
 
     color: var(--logo-header-color);
 
-    font-family: "Raleway";
+    font-family:var(--additional-type);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -20,7 +20,7 @@
     
     &--first-logo {
     color: var(--akcent-color);
-    font-family: "Raleway";
+    font-family:var(--additional-type);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;

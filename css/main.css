@@ -10,6 +10,8 @@
   --icons-basic-color: #afb1b8;
   --icons-secondary-color: #757575;
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --basic-type: "Roboto";
+  --additional-type: "Raleway";
 }
 
 .visualy-hidden {
@@ -29,7 +31,7 @@
 }
 
 .body {
-  font-family: Roboto, sans-serif;
+  font-family: var(--basic-type), sans-serif;
   color: var(--title-text-color);
   margin: auto;
 }
@@ -384,7 +386,7 @@ img {
 .header__logo {
   margin-right: 93px;
   color: var(--logo-header-color);
-  font-family: "Raleway";
+  font-family: var(--additional-type);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -392,7 +394,7 @@ img {
 }
 .header__logo--first-logo {
   color: var(--akcent-color);
-  font-family: "Raleway";
+  font-family: var(--additional-type);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
